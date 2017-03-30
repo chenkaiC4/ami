@@ -50,6 +50,7 @@ Please submit pull request, open issues or contact us for any question, feature 
 3. [Usage](#npm)
 4. [Developer corner](#developer-corner)
 5. [Credits](#credits)
+6. [Citations](#citations)
 
 ## Hello AMI
 
@@ -221,7 +222,7 @@ Volume rendering, 2D viewer, arbitrary reslicing and more examples and advanced 
 | ✅ 2D Visulization  | ✅ Dicom     | ✅ VTK (THREEJS) | 🔶 Handle (2D/3D)       |
 | ✅ 3D Visualization | ✅ NRRD      | ✅ STL (THREEJS) | 🔶 Probe (2D/3D)        |
 | ✅ Volume Rendering | ✅ Nifti     | 🔶 TRK           | 🔶 Ruler (2D/3D)        |
-| ✅ Lookup Tables    | 🔶 MHD/RAW   | ❌ FSM           | 🔶 Orientation (2D/3D)  |
+| ✅ Lookup Tables    | ✅  MHD/RAW   | ❌ FSM           | 🔶 Orientation (2D/3D)  |
 | 🔶 Label Maps       | ❌ MGH/MGZ   | ❌ CURV          | 🔶 Angle (2D/3D)        |
 |                    | ❌ JPEG      |                  | 🔶 Orientation (2D/3D)  |
 
@@ -396,3 +397,8 @@ AMI would not exist without them:
 - GZ file decompression
 - Author(s): [nodeca](https://github.com/nodeca)
 
+# Citations
+### 2017
+### 2016
+- [LNICST 2016 - article - Volume Visualization Tools for Medical Applications in Ubiquitous Platforms - Arbelaiz et al.](https://link.springer.com/chapter/10.1007/978-3-319-49655-9_54)
+- [RSNA 2016 - poster - Interoperable communication of quantitative image analysis results using DICOM standard (DICOM4QI) - Fedorov et al.](https://docs.google.com/presentation/d/16mZbPiXqU7tKTRAcB7bnP1RGybBLqF-O0319raUWYHo/edit#slide=id.p)
