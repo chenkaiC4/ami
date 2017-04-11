@@ -111,6 +111,11 @@ export default class HelpersVoxel extends THREE.Object3D {
   createDom() {
     // that could be a web-component!
     let measurementsContainer = this._createDiv('VJSVoxelMeasurements', this.id, 'VJSVoxelMeasurements');
+    measurementsContainer.style.position = 'absolute';
+    measurementsContainer.style.backgroundColor = 'rgba(255, 255, 0, 0.7)';
+    measurementsContainer.style.padding = '4px';
+    measurementsContainer.style.borderRadius = '5px';
+    measurementsContainer.style.fontSize = '12px';
     // RAS
     let rasContainer = this._createDiv('VJSVoxelProbeWorld', this.id, 'VJSVoxelProbeWorld');
     measurementsContainer.appendChild(rasContainer);

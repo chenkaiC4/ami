@@ -55,7 +55,7 @@ export default class WidgetsBase extends THREE.Object3D {
   }
 
   getMouseOffsets(event, container) {
-
+    this.initOffsets();
     return {
       x: (event.clientX - this._offsets.left) / container.offsetWidth * 2 - 1,
       y: -((event.clientY - this._offsets.top) / container.offsetHeight) * 2 + 1,
