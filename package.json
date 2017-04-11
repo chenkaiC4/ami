@@ -1,6 +1,6 @@
 {
   "name": "ami-cjs.js",
-  "version": "0.0.23-dev",
+  "version": "0.0.30-dev",
   "main": "lib/ami.js",
   "keywords": [
     "ami",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "dicom-parser": "1.7.3",
-    "image-JPEG2000": "OHIF/image-JPEG2000#master",
+    "image-JPEG2000": "http://meteor-visual3d.oss-cn-beijing.aliyuncs.com/image-JPEG2000.tar.gz",
     "jpeg-lossless-decoder-js": "1.2.3",
     "math-float32-to-binary-string": "^1.0.0",
     "nifti-reader-js": "v0.5.3",
