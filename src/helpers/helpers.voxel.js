@@ -173,6 +173,7 @@ export default class HelpersVoxel extends THREE.Object3D {
 
   updateDomClass() {
     let element = document.getElementById('VJSWidgetVoxelProbe' + this.id);
+    if (!element) return;
     if (this._active === true) {
       element.classList.add('VJSVoxelProbeActive');
     } else {
