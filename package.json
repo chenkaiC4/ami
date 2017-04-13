@@ -1,6 +1,6 @@
 {
   "name": "ami-cjs.js",
-  "version": "0.0.35-dev",
+  "version": "0.0.36-dev",
   "main": "lib/ami.js",
   "keywords": [
     "ami",
