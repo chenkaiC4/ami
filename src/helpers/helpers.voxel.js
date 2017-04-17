@@ -132,6 +132,7 @@ export default class HelpersVoxel extends THREE.Object3D {
     // Package everything
     let domElement = this._createDiv('VJSWidgetVoxelProbe', this.id, 'VJSWidgetVoxelProbe');
     domElement.style.position = 'absolute';
+    domElement.style.margin = '10px';
     domElement.appendChild(svgContainer);
     domElement.appendChild(measurementsContainer);
 
