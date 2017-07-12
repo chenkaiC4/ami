@@ -1,5 +1,5 @@
 import GeometriesVoxel from '../geometries/geometries.voxel';
-import ModelsStack from '../models/models.stack';
+import Utils from '../core/core.utils';
 import ModelsVoxel from '../models/models.voxel';
 
 /**
@@ -67,16 +67,16 @@ export default class HelpersVoxel extends THREE.Object3D {
     this._voxel.worldCoordinates = worldCoordinates;
 
     // update data coordinates
-    this._voxel.dataCoordinates = ModelsStack.worldToData(
+    this._voxel.dataCoordinates = Utils.worldToData(
                   this._stack,
                   this._voxel.worldCoordinates);
 
     // update value
-    let value = ModelsStack.value(
+    let value = Utils.value(
       this._stack,
       this._voxel.dataCoordinates);
 
-    this._voxel.value = ModelsStack.valueRescaleSlopeIntercept(
+    this._voxel.value = Utils.rescaleSlopeIntercept(
       value,
       this._stack.rescaleSlope,
       this._stack.rescaleIntercept);
@@ -90,7 +90,7 @@ export default class HelpersVoxel extends THREE.Object3D {
   }
 
   createMesh() {
-    let dataCoordinates = ModelsStack.worldToData(
+    let dataCoordinates = Utils.worldToData(
       this._stack,
       this._worldCoordinates);
 
@@ -343,3 +343,4 @@ export default class HelpersVoxel extends THREE.Object3D {
     return this._active;
   }
 }
+
